@@ -5,6 +5,8 @@ const styles = StyleSheet.create({
   error: {
     borderWidth: 1,
     borderColor: '#d73a4a',
+    borderRadius:5,
+    marginBottom:5
   }
 });
 
