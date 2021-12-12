@@ -1,4 +1,10 @@
+import Constants from 'expo-constants';
+
 const theme = {
+    container: {
+      paddingTop: Constants.statusBarHeight,
+      marginHorizontal: 12,
+    },
     colors: {
       textPrimary: '#24292e',
       textSecondary: '#586069',

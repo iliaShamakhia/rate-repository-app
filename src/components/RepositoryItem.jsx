@@ -70,11 +70,11 @@ const RepositoryItem = ({item}) => {
             </View>
             <View style={styles.stats}>
                 <View>
-                    <Text style={styles.boldTextCenter}>{(item.stargazersCount/1000).toFixed(1)+'k'}</Text>
+                    <Text style={styles.boldTextCenter}>{item.stargazersCount>=1000?(item.stargazersCount/1000).toFixed(1)+'k':item.stargazersCount}</Text>
                     <Text style={styles.textCenter}>Stars</Text>
                 </View>
                 <View>
-                    <Text style={styles.boldTextCenter}>{(item.forksCount/1000).toFixed(1) + 'k'}</Text>
+                    <Text style={styles.boldTextCenter}>{item.reviewCount>=1000?(item.forksCount/1000).toFixed(1) + 'k':item.reviewCount}</Text>
                     <Text style={styles.textCenter}>Forks</Text>
                 </View>
                 <View>
